@@ -18,6 +18,7 @@ from django.views.generic import DetailView
 from django.contrib.auth.models import User
 from django.urls import reverse
 from .models import Car_Post
+from .models import CarFeatures
 
 class Home(TemplateView):
     template_name='home.html'

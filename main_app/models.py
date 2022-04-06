@@ -3,6 +3,18 @@ from django.db import models
 from django.contrib.auth.models import User
 # Create your models here.
 
+
+class CarFeatures(models.Model):
+    name=models.CharField(max_length=50),
+    roof_type=models.CharField(max_length=50),
+    transmtion_type= models.CharField(max_length=50),
+    interior= models.CharField(max_length=50),
+    extras= models.CharField(max_length=50)
+ 
+    def __str__(self):
+        return self.name
+
+
 CAR_CATEGORY=(
         ('SUV','Sport Utility Vehicle'),
         ('MPV','Multi Purpose Vehicle'),
@@ -27,6 +39,7 @@ class Car_Post(models.Model):
     category=models.CharField(max_length=3, choices=CAR_CATEGORY)
     status=models.CharField(max_length=25, choices=STATUS)
     user= models.ForeignKey(User, on_delete=models.CASCADE)
+    car_features=models.ManyToManyField(CarFeatures)
     image= models.CharField(max_length=500)
     year=models.IntegerField()
     location=models.CharField(max_length=50)
