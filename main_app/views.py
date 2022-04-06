@@ -92,5 +92,21 @@ def Car_Features_Index(request):
 
 def Cartype_Show(request, car_features_id):
     car_feature=CarFeatures.objects.get(id=car_features_id)
-    return render (request, 'car_features_show.html', {'car_feature=':car_feature}) # rendering out cartype=Car_Type.objects.get(id=cartype_id) object
+    return render (request, 'car_features_show.html', {'car_feature=':car_feature}) 
 
+class Car_Features_Create(CreateView):
+    model= CarFeatures
+    fields='__all__'
+    template_name= "car_features_create.html"
+    success_url='/features'
+
+class Car_Features_Update(UpdateView):
+    mode=CarFeatures
+    fields=['name' 'roof type', 'transmtion type', 'interior', 'extras']
+    template_field= 'car_features_update.html'
+    success_url='/features'
+
+class Car_Features_Delete(DeleteView):
+    model= CarFeatures
+    template_name= "car_features_delete.html"
+    success_url='/features'
