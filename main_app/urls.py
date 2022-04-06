@@ -2,7 +2,7 @@ from django.urls import path
 from . import views
 
 urlpatterns=[
-    path('', views.Home.as_view(), name='home'), # name = nameof the route
+    # path('', views.Home.as_view(), name='home'), # name = nameof the route
     path('about/', views.About.as_view(), name = 'about'),
     path('cars/', views.Car_List.as_view(), name='car_list'),
     path('cars/new/', views.Car_Create.as_view(), name='car_create'),
@@ -16,4 +16,9 @@ urlpatterns=[
     path ('features/create/', views.Car_Features_Create.as_view(), name = 'car_features_create'),
     path('features/<int:pk>/update', views.Car_Features_Update.as_view(), name="car_features_update"),
     path('features/<int:pk>/delete', views.Car_Features_Delete.as_view(), name="car_features_delete"),
+
+    # Auath
+    path('login/', views.login_view, name='login'),
+    path('logout/', views.logout_view, name='logout'),
+    path('signup/', views.signup_view, name='signup'),
     ]
