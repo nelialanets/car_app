@@ -1,0 +1,24 @@
+{% extends 'base.html'%}
+{%load static%}
+
+{%block content %}
+
+<h1> {{ username }}</h1>
+
+{% for car in cars%}
+
+<a href="'/cars/{{car_post.id}}">
+
+    <h3>
+        {{car.name}}
+    </h3>
+    <!-- <h3>
+        <img src="{{car.image}}" alt="{{car.name}}"/>
+    </h3> -->
+</a>
+
+
+{% endfor%}
+
+
+{%endblock%}

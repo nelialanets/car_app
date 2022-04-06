@@ -72,3 +72,8 @@ class Car_Delete(DeleteView):
     model=Car_Post
     template_name="car_delete.html"
     success_url ='/cars/' #redirect
+
+def Profile(request, username):
+    user= User.objects.get(username=username)
+    cars=Car_Post.objects.filter(user=user)
+    return render(request, 'profile.html', {'username': username, 'cars':cars})
