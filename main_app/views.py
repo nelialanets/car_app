@@ -59,3 +59,16 @@ class Car_Create(CreateView): #CREATE
         self.object.user = self.request.user # wehn we  make a request for the user that comes with the form of the created car== it will show who created a car 
         self.object.save()
         return HttpResponseRedirect('/cars')
+
+class Car_Update(UpdateView):
+    model=Car_Post
+    fields=['name', 'color', 'category', 'status', 'image', 'year', 'location',  'miles', 'price', 'about', 'model', 'fuel_type']
+    template_name ='car_update.html'
+    # success_url='/cars/'
+    def get_success_url(self):
+     return reverse('car_detail', kwargs={'pk': self.object.pk}) 
+
+class Car_Delete(DeleteView):
+    model=Car_Post
+    template_name="car_delete.html"
+    success_url ='/cars/' #redirect
