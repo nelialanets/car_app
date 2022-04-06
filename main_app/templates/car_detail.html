@@ -15,8 +15,9 @@
     <h3>Miles:{{ car_post.miles}}</h3>
     <h3>Model: {{car_post.model}}</h3>
     <h3>Fuel:{{car_post.fuel_type}} </h3>
-    <h3>Posted by:<a href="'/user/{{car.user.username}}"> 
-    </a> </h3>
+    <p> Posted by: 
+        <a href ="/user/{{car.user.username}}">{{car.user.username}}</a>
+    </p>
   </div>
   <a href="/features">Additional Features</a>
   <div>
