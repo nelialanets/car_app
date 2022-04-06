@@ -1,0 +1,18 @@
+<!-- templates/cattoy_index.html -->
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>Features </h1>
+
+{% for car_feature in car_features %}
+    <div>
+        <a href="{% url 'car_features_show' car_feature.id %}">
+            <div class="card-content">
+                <span>  {{ car_feature.name}}</span>
+
+            </div>
+        </a>
+    </div>
+{% endfor %}
+
+{% endblock %}

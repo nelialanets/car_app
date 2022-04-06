@@ -19,6 +19,11 @@ from django.contrib.auth.models import User
 from django.urls import reverse
 from .models import Car_Post
 from .models import CarFeatures
+#Auth
+from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
+from django.contrib.auth.decorators import login_required
+from django.utils.decorators import method_decorator
 
 class Home(TemplateView):
     template_name='home.html'
@@ -78,3 +83,14 @@ def Profile(request, username):
     user= User.objects.get(username=username)
     cars=Car_Post.objects.filter(user=user)
     return render(request, 'profile.html', {'username': username, 'cars':cars})
+
+    # M:M
+
+def Car_Features_Index(request):
+    car_features=CarFeatures.objects.all()
+    return render(request,'features_index.html', {'car_features': car_features})
+
+def Cartype_Show(request, car_features_id):
+    car_feature=CarFeatures.objects.get(id=car_features_id)
+    return render (request, 'car_features_show.html', {'car_feature=':car_feature}) # rendering out cartype=Car_Type.objects.get(id=cartype_id) object
+

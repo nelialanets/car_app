@@ -10,5 +10,8 @@ urlpatterns=[
     path('cars/<int:pk>/update', views.Car_Update.as_view(), name='car_update'),
     path('cars/<int:pk>delete', views.Car_Delete.as_view(), name='car_delete'),
     path('user/<username>/', views.Profile, name='profile'),
+
+     path('features/', views.Car_Features_Index, name='features_index'),
+     path('features/<int:car_features_id>', views.Cartype_Show, name="car_features_show"),
     
     ]

@@ -5,10 +5,10 @@ from django.contrib.auth.models import User
 
 
 class CarFeatures(models.Model):
-    name=models.CharField(max_length=50),
-    roof_type=models.CharField(max_length=50),
-    transmtion_type= models.CharField(max_length=50),
-    interior= models.CharField(max_length=50),
+    name=models.CharField(max_length=50)
+    roof_type=models.CharField(max_length=50)
+    transmtion_type= models.CharField(max_length=50)
+    interior= models.CharField(max_length=50)
     extras= models.CharField(max_length=50)
  
     def __str__(self):
