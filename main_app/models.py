@@ -1,6 +1,6 @@
 from django.db import models
 from django.db import models
-
+from django.contrib.auth.models import User
 # Create your models here.
 
 CAR_CATEGORY=(
@@ -22,12 +22,12 @@ STATUS=(
         ('NO_AVAILABLE','Reserved'),
  )
 
-
 class Car_Post(models.Model):
     name=models.CharField(max_length=50)
     color=models.CharField(max_length=50)
     category=models.CharField(max_length=3, choices=CAR_CATEGORY)
     status=models.CharField(max_length=25, choices=STATUS)
+    user= models.ForeignKey(User, on_delete=models.CASCADE)
     image= models.CharField(max_length=500)
     year=models.IntegerField()
     location=models.CharField(max_length=50)
@@ -36,7 +36,7 @@ class Car_Post(models.Model):
     price=models.IntegerField()
     about=models.CharField(max_length=200)
     model=models.CharField(max_length=100)
-    fuel_type=models.CharField(max_length=100)
+    fuel_type=models.CharField(max_length=100) 
 
     def __str__(self):
         return self.name
