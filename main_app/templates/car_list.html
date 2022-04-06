@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{%load static%}
+
+{% block title%}
+ Cars' List
+{%endblock%}
+
+{% block content %}
+
+<!-- <h1>{{header}}</h1> -->
+
+ </div>
+<!-- <div class="main-car-container"> -->
+    <div class="car-grid">
+    {% for car in cars%}
+    <img src="{{car.image}}" alt="{{car.name}}"/>
+    <a href="{% url 'car_detail' car.pk %}" >
+    <h4>Name: {{car.name}}</h4>
+    <img src="{{car.image}}" alt="{{car.name}}"/>
+    </a>
+</div>
+<p> Posted by: 
+    <a href ="/user/{{car.user.username}}">{{car.user.username}}</a>
+</p>
+</div>
+    {%endfor%}
+{%endblock%}

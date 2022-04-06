@@ -16,9 +16,46 @@ from django.views.generic.base import TemplateView
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.views.generic import DetailView
 from django.contrib.auth.models import User
+from django.urls import reverse
+from .models import Car_Post
 
 class Home(TemplateView):
     template_name='home.html'
 
 class About(TemplateView):
     template_name='about.html'
+
+class Car_List(TemplateView):
+    template_name='car_list.html'
+    def get_context_data(self, **kwargs):
+         context=super().get_context_data(**kwargs)
+         # to get the query parameter we have to acccess it in the request.GET dictionary object
+         context['cars']=Car_Post.objects.all
+         name = self.request.GET.get('name')
+         if name != None:
+             context['cars']=Car_Post.objects.filter(name_icontains=name)
+             context['header'] = f"Searching for {name}"
+         else:
+             context["cars"] = Car_Post.objects.all()
+            #  context ['header']='Cars List'
+         return context
+
+
+class Car_Detail(DetailView):
+    model=Car_Post
+    template_name='car_detail.html'
+    def get_success_url(self):
+     return reverse('car_detail', kwargs={'pk': self.object.pk})
+
+class Car_Create(CreateView): #CREATE
+    model=Car_Post
+    fields=['name', 'color', 'category', 'status', 'image', 'year', 'location',  'miles', 'price', 'about', 'model', 'fuel_type', 'user']
+    template_name ='car_create.html'
+    success_url='/cars/'
+    def get_success_url(self):
+        return reverse ('car_detail', kwargs={'pk': self.object.pk})
+    def form_valid(self, form):
+        self.object=form.save(commit=False)
+        self.object.user = self.request.user # wehn we  make a request for the user that comes with the form of the created car== it will show who created a car 
+        self.object.save()
+        return HttpResponseRedirect('/cars')

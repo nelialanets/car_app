@@ -14,7 +14,6 @@ CAR_CATEGORY=(
         ('SED', 'Sedan'),
         ('SUP', 'Supercar'),
         ('COP','Coupe')
-
 )
 
 STATUS=(

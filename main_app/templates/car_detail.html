@@ -1,0 +1,29 @@
+{% extends 'base.html' %} 
+{%load static%}
+{% block content %}
+<div>
+    <img src='{{car_post.image}}' alt='{{car_post.name}}' />
+  </div>
+  </div>
+  <div>
+    <h3>Model:{{car_post.name}}</h3>
+    <h3>About:{{car_post.about}}</h3>
+    <h3>Year: {{car_post.year}}</h3>
+    <h3>Location:{{car_post.location}}</h3>
+    <h3>Color:{{car_post.color}}</h3>
+    <h3>Status:{{car_post.status}}</h3>
+    <h3>Miles:{{ car_post.miles}}</h3>
+    <h3>Model: {{car_post.model}}</h3>
+    <h3>Fuel:{{car_post.fuel_type}} </h3>
+    <h3>Posted by: <a href="'/user/{{car.user.username}}"> 
+    </a> </h3>
+  </div>
+  <div>
+  <!-- <a href="{% url 'car_update' car_post.pk%}">Update</a>
+  <a href="{% url 'car_delete' car_post.pk %}">Delete</a> -->
+</div>
+ <div>
+ </div>
+
+  <div>
+{% endblock %}
