@@ -97,9 +97,11 @@ def Car_Features_Index(request):
     car_features=CarFeatures.objects.all()
     return render(request,'features_index.html', {'car_features': car_features})
 
-def Cartype_Show(request, car_features_id):
+def Car_Features_Show(request, car_features_id):
     car_feature=CarFeatures.objects.get(id=car_features_id)
-    return render (request, 'car_features_show.html', {'car_feature=':car_feature}) 
+    print(car_feature)
+    print(car_feature.id)
+    return render (request, 'car_features_show.html', {'car_feature':car_feature}) 
 
 @method_decorator(login_required, name='dispatch')
 class Car_Features_Create(CreateView):
@@ -110,9 +112,9 @@ class Car_Features_Create(CreateView):
 
 @method_decorator(login_required, name='dispatch')
 class Car_Features_Update(UpdateView):
-    mode=CarFeatures
-    fields=['name' 'roof type', 'transmtion type', 'interior', 'extras']
-    template_field= 'car_features_update.html'
+    model=CarFeatures
+    fields='__all__'
+    template_name= 'car_features_update.html'
     success_url='/features'
 
 @method_decorator(login_required, name='dispatch')

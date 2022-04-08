@@ -3,15 +3,23 @@
 {% block content %}
 
 <h1>Cartype Details</h1>
+<!-- {{car_feature}}
+{{car_feature.roof_type}} -->
+
+
 
 <div>
     <div>
-        <span>{{car_features.name }}</span>
+        <span>{{car_feature.name}}</span>
+        {{car_feature.roof_type}}
+        {{car_feature.extras}}
+        {{car_feature.transmtion_type}}
+        {{car_feature.extras}}
     </div>
     
     <div>
-        <!-- <a href="{% url 'car_features_update' car_features_id %}">Edit</a>
-        <a href="{% url 'car_features_delete' car_features_id %}">Delete</a> -->
+        <a href="{% url 'car_features_update' car_feature.id %}">Edit</a> 
+        <a href="{% url 'car_features_delete' car_feature.id %}">Delete</a> 
     </div>
 </div>
 {% endblock %}

@@ -6,26 +6,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'styles/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/navbar.css.css' %}">
     <script src="{% static 'scripts/app.js' %}" defer></script>
+
     <!-- CDN SCRIPTS CSS go here -->
     <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
-    <nav>
+    <nav class="nav-container">
+        <div class="left-side">
+            <a href="/cars"><h1 class = "logo">LIVING</h1></a>
+         </div>
+    <div class="right-side">
         {% if user.is_authenticated %}
         <a href="{% url 'profile' user.username %}">Hello, {{ user.username }}!</a>
-        <a href="{% url 'logout' %}">Logout</a>
+        <a href="{% url 'logout' %}">Logout</a> 
         {% else %}
-        <a href="{% url 'login' %}">Login</a>
-        <a href="{% url 'signup' %}">SignUp</a>
+       <a href="{% url 'login' %}">Login</a>
+        <!-- <a href="{% url 'signup' %}">SignUp</a>  --> 
         {% endif %}
         <a href=" /about">About</a>
         <a href="/cars">Car List</a>
         <a href="{% url 'car_create' %}">Add Car</a>
         <a href="/features">Features</a>
-        <a href="/admin"> Admin</a> 
-
+        <a href="{% url 'car_features_create' %}">Add Featers</a>
+        <a href="/admin">Admin</a>
+        <div class="dropdown-content"></div>
     </nav>
+    </div>
+
     
     {% block content %}
 
