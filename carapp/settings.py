@@ -51,7 +51,7 @@ SECRET_KEY = str(os.getenv('SECRET_KEY')) # calling the SECRET_KEY
 # DEBUG = True
 
 ALLOWED_HOSTS = [
-    'https://car-app-living.herokuapp.com'
+    'car-app-living.herokuapp.com'
 ]
 
 
