@@ -1,51 +1,50 @@
 /* log in page */
- /* navbar */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300&display=swap');
  body{
     margin: 0;
     padding: 0;
     height: 100vh;
 	box-sizing: border-box;
+	font-family: 'Cormorant', serif;
+	font-size: large;
 }
+
+/* ==============navbar ===================*/
  .nav-container{
-    /* border: 1px black solid; */
-    height: 8%;
-    display: flex;
-    padding: 5px;
-    /* margin-top: 1%;   */
-    /* height: 100px; */
-    box-shadow:rgb(20, 45, 15);
-  background-color:rgb(15, 15, 15);
-  opacity: 0.6;
-  background-image:
- linear-gradient(rgb(233, 227, 227), #222121) 
+  height: 5%;
+  display: flex;
+  padding: 5px;
+  /* box-shadow:rgb(159, 21, 223); */
+  /* background-color:rgb(191, 177, 234); */
+  /* opacity: 0.7; */
+  /* background-image: */
+ /* linear-gradient(rgb(233, 227, 227), #e1b5e1)  */
 }
-.left-side, h1{
-flex: 30%;
+.left-side{
+flex: 10%;
 margin-top: 1%;
-margin-left: 1%;
+/* margin-left: 1%; */
 }
 .right-side{
     padding: 1px;
     text-decoration: none;
     width: 1px;
-    flex: 70%;
+    flex: 90%;
 	margin-top: 2%;
     margin: 1px;
     justify-content: left;
 }
 .right-side, a{
-    font-size: 20px;
-    /* max-height: 80px; */
+    font-size: 15px;
 	margin-top: 1%;
-    /* margin: 5px ; */
-    padding: 2px;
+    padding: 1px;
     margin-left: 8%;
     text-decoration: none;
     flex-direction: right;
 }
 
 .right-side, a:hover{
-	color:#4c00ff
+	color:#4c00ff;
 }
 
 .nav a::before{
@@ -55,10 +54,10 @@ margin-left: 1%;
 	width: 100px;
 	background-color: #242f39;
 }
-a{color:black}
+a{color:black;
+}
 
-
-/* Home page  */
+/* =----------------Home page ------------------ */
 .homepage-container{
     position: relative;
     text-align: center;
@@ -106,7 +105,7 @@ font-weight: bold;
 }
 
 
-/*******************************************/ 
+/*********************LogIn**********************/ 
 .boxSizeLogin {
 	box-sizing: border-box;
 }
@@ -402,7 +401,7 @@ input.inpLogin{
 	}
 }
 
-/* SignUp/Register  */
+/*------------------- SignUp/Register --------------------\ */
 
  
 a,
@@ -492,7 +491,9 @@ input[type="password"] {
 
 /* Car list styling  */
 
-img {
+/* ===============Car List Page============ */
+
+img, #car-list-img  {
 	display: block;
 	width: 100%;
 	height: 100%;
@@ -599,4 +600,75 @@ img {
 .btn-form-add,button:hover{
 background-color: #9a91e7;
 font-size: larger;
+}
+/* =============Car Detail Page=========== */
+
+.main-car-detail{
+	display: flex;
+	width: 100%;
+	/* background-color: #9a91e7; */
+	margin: 10px;
+	margin-top: 2%;
+}
+ #detail-img {
+	display: flex;
+	margin-top: 5px;
+	margin: auto;
+	height: 100%;
+	width: 50%;
+	margin-left: 35%;
+	/* background-color: #5151a2; */
+	border-radius: 5px;
+} 
+
+.container-detal-information{
+	margin-top: 2%;
+	display: flex;
+	width: 100%;
+	padding: 5px;
+	border-radius: 1px solid black;
+}
+.car-detal-information{
+	/* background-color: #9a91e7; */
+	padding: 5px;
+	margin-left: 27%;
+	margin-right: 30%;
+	border-radius: 1px solid black;
+}
+.car-detal-information, h3{
+	font-family: 'Cormorant', serif;
+}
+.additional-features{
+	padding: 5px;
+	width:13%;
+	margin-left: 27%;
+	margin-right: 30%;
+	font-size: large;
+	border: 1px solid #9a91e7 ;
+	border-radius: 5px;
+}
+
+.buttons-detail{
+	display: flex;
+	height: 5%;
+	margin-left:60%;
+	margin-top: 2%;
+	margin-right: 20%;
+
+}
+ .detail-update-btn {
+	border: 1px solid black;
+	width: 20%;
+	text-align: center;
+	height: 45%;
+	padding: 2%;
+	border-radius: 3px;
+}
+.detail-delete-btn {
+	border: 1px solid black;
+	width: 20%;
+	text-align: center;
+	height: 45%;
+	padding: 2%;
+	border-radius: 3px;
 }

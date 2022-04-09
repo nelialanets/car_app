@@ -16,12 +16,12 @@
 </div>
 <div class="card_info">
     <a href="{% url 'car_detail' car.pk %}" >
-        <img src="{{car.image}}" alt="{{car.name}}"/>
+        <img id='car-list- img' src="{{car.image}}" alt="{{car.name}}"/>
         <h4>{{car.name}}</h4>
         </a>
-     <p>Location:{{car_post.location}}</p>
+     <p>Location:{{car.location}}</p>
      <hr>
-     <p>Price:{{car_post.price}}</p>
+     <p>Price:{{car.price}}$</p>
 
 Posted by: 
 <a href ="/user/{{car_post.user.username}}">{{car.user.username}}</a>

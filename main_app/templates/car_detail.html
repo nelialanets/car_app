@@ -1,31 +1,35 @@
 {% extends 'base.html' %} 
 {%load static%}
 {% block content %}
-<div>
-    <img src='{{car_post.image}}' alt='{{car_post.name}}' />
+<div class = 'main-car-detail'>
+<div class="car-detail-img">
+    <img id="detail-img" src='{{car_post.image}}' alt='{{car_post.name}}' />
   </div>
   </div>
-  <div>
-    <h3>Model:{{car_post.name}}</h3>
-    <h3>About:{{car_post.about}}</h3>
+  <div classs="container-detal-information">
+  <div class="car-detal-information">
+    <h3><strong>Model</strong>: {{car_post.name}}</h3>
+    <h3>About: {{car_post.about}}</h3>
+    <h3>Location: {{car_post.location}}</h3>
+    <h3>Status: {{car_post.status}}</h3>
     <h3>Year: {{car_post.year}}</h3>
-    <h3>Location:{{car_post.location}}</h3>
-    <h3>Color:{{car_post.color}}</h3>
-    <h3>Status:{{car_post.status}}</h3>
-    <h3>Miles:{{ car_post.miles}}</h3>
+    <h3>Color: {{car_post.color}}</h3>
+    <h3>Miles: {{ car_post.miles}} </h3>
     <h3>Model: {{car_post.model}}</h3>
-    <h3>Fuel:{{car_post.fuel_type}} </h3>
-    <p> Posted by: 
+    <h3>Price Per Day: {{car.price}} $</h3>
+    <h3>Fuel Type: {{car_post.fuel_type}} </h3>
+    <!-- <p> Posted by: 
         <a href ="/user/{{car.user.username}}">{{car.user.username}}</a>
-    </p>
-  </div>
-  <a href="/features">Additional Features</a>
-  <div>
-  <a href="{% url 'car_update' car_post.pk%}">Update</a>
-  <a href="{% url 'car_delete' car_post.pk %}">Delete</a> 
+    </p> -->
+</div>
+</div>
+<div class="additional-features">
+  <a href="/features">Explore Additional Features</a>
+    </div>
 </div> 
- <div>
- </div>
-
-  <div>
+</div>
+<div class="buttons-detail">
+  <a class="detail-update-btn" href="{% url 'car_update' car_post.pk%}">Update</a>
+  <a  clss="detail-delete-btn" href="{% url 'car_delete' car_post.pk %}">Delete</a> 
+</div>
 {% endblock %}
