@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     height: 100vh;
-	/* box-sizing: border-box; */
+	box-sizing: border-box;
 }
  .nav-container{
     /* border: 1px black solid; */
@@ -99,44 +99,10 @@ font-size: larger;
 
 input.btnLogin{
 border-radius: 20px !important;
-border: 0;
 background-color: #242f39;
 color: #FFFFFF;
-font-size: 16px;
 font-weight: bold;
-padding: 15px 30px;
-letter-spacing: 1px;
-text-transform: uppercase;
-margin-top: 3vh;
-transition: transform 80ms ease-in;
-}
-.searchBtnCar{
-	text-align: center;
-}
-.textCarSearch{
-	font-family: "Montserrat";
-    font-weight: 300;
-    color: black;
-    font-size: 30px;
-    text-align: center;
-}
-.btnFormPosCar{
-	margin-top: 12vh;
-}
-.underlineCar{
-	position: relative;
-    display: inline-block;
-}
-.underlineCar::after{
-	content: '';
-    display: block;
-    width: 106%;
-    height: 2px;
-    background-color:  #242f39
-    position: absolute;
-    left: -3%;
-    bottom: 14px;
-    z-index: -1;
+
 }
 
 
@@ -153,14 +119,7 @@ transition: transform 80ms ease-in;
 	font-family: 'Montserrat', sans-serif;
 }
 
-p.pLogin {
-	font-size: 17px;
-	font-weight: 100;
-	line-height: 20px;
-	letter-spacing: 0.5px;
-	margin: 20px 0 30px;
 
-}
 .loginFormText{
 	height: 100%;
 	width: 100%;
@@ -171,44 +130,13 @@ p.pLogin {
 	width: 100%;
 	height: 100%;
 }
-.createPos{
-	padding-top: 16vh;
-	text-align: center;
-}
-.textCreatePos{
-	width: 90%;
-	margin-left: 5%;
-	text-align: center;
-}
-button.btnLogin {
-	border-radius: 20px !important;
-	border: 1px solid #242f39;
-	background-color: #242f39;
-	color: #FFFFFF;
-	font-size: 12px;
-	font-weight: bold;
-	padding: 12px 7px;
 
-	letter-spacing: 1px;
-	text-transform: uppercase;
-	transition: transform 80ms ease-in;
-
-}
-
-
-button.btnLogin:focus {
-	outline: none;
-}
-
-button.btnLogin.ghost {
-	background-color: transparent;
-	border-color: #FFFFFF;
-}
 .buttonPosLogin{
 	position: absolute;
 	top:75%;
 	left: 50%;
 	transform: translateX(-50%);
+	width: 80%;
 }
 form.loginForm {
 	background-color: #FFFFFF;
@@ -251,7 +179,7 @@ input.inpLogin{
 	position: absolute;
 	top: 0;
 	height: 100%;
-	transition: all 0.6s ease-in-out;
+	/* transition: all 0.6s ease-in-out; */
 }
 
 .sign-in-containerLogin {
@@ -266,6 +194,7 @@ input.inpLogin{
 
 .sign-up-containerLogin {
 	left: 0;
+	margin-top: 5%;
 	width: 50%;
 	opacity: 0;
 	z-index: 1;
@@ -340,7 +269,6 @@ input.inpLogin{
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	
 	text-align: center;
 	top: 0;
 	height: 100%;
@@ -366,7 +294,6 @@ input.inpLogin{
 	top: 20%;
 	left: 50%;
 	transform: translateX(-50%);
-	
 	font-family: 'Lato', sans-serif;
 	letter-spacing: 2px;
 	font-size: 40px;
@@ -392,8 +319,6 @@ input.inpLogin{
 		font-size: 40px;
 	
 	}
-	
-	
 	
 	}
 
@@ -427,7 +352,7 @@ input.inpLogin{
 	position:absolute;
 	top: 20%;
 	left: 50%;
-	transform: translateX(-50%);
+	/* transform: translateX(-50%); */
 	font-size: 35px;
 	font-weight: bold;
 	width: 100%;
@@ -436,23 +361,15 @@ input.inpLogin{
 	position: absolute;
 	top:75%;
 	left: 50%;
-	transform: translateX(-50%);
+	/* transform: translateX(-50%); */
 }
 .accoutLogin{
-	
 	font-size: 28px;
 }
 .alreadyLogin{
 	margin-top: -65%;
 }
 
-.wrapperLogin {
-	-webkit-box-shadow: 10px 29px 85px -6px rgba(0,0,0,0.75);
-	-moz-box-shadow: 10px 29px 85px -6px rgba(0,0,0,0.75);
-	box-shadow: 10px 29px 85px -6px rgba(0,0,0,0.75);
-	margin-top:-5vh;
-	z-index: 1000000000000000000;
-}
 
 
 }
@@ -503,7 +420,7 @@ a,
   -webkit-transform: translateY(-50%);
 		  transform: translateY(-50%);
   overflow: hidden;
-  display: -webkit-box;
+ 
   display: flex;
   -webkit-box-align: center;
 		  align-items: center;
@@ -518,9 +435,8 @@ a,
 
  .container__child {
   height: 100%;
-  color: black;
+  color: white;
   align-items: center;
-  
 } 
 
 .signup__form {
@@ -528,40 +444,42 @@ a,
   border-radius: 15px;
   background: #fdfdfd;
   color: black;
+  margin-left: 10%;
 }
-
+.signup__form, p{
+	color: blie
+}
 label {
   font-size: 1rem;
   text-transform: uppercase;
-  color: #ccc;
+  color: black;
 
 }
 
-input, form{
+.signup__form, input{
 	padding: 2%;
-	width: 60%;
+	width: 50%;
 	align-items: center;
 	justify-content: center;
-	margin-right: -30%;
-}
+	margin-right: 30%;
+} 
 
-input.form-control {
+/* input.form-control {
   background-color: transparent;
   border-top: 0;
   border-left: 0;
   border-right: 0;
-  border-bottom: 2px solid #fcc842;
   outline: 0; 
-}
-input[type="text"] {
+} */
+/* input[type="text"] {
   color: rgb(33, 32, 32)
 }
 
 input[type="password"] {
   color: #111;
-}
+} */
 
-.btn--form {
+/* .btn--form {
   padding: 0.5rem 2.5rem;
   font-size: 0.95rem;
   font-weight: 600;
@@ -569,24 +487,6 @@ input[type="password"] {
   color: #fff;
   background-color: #9a91e7 !important;
   border-radius: 2.1875rem;
-}
-
-/* .signup__link {
-  font-size: 0.8rem;
-  font-weight: 600;
-  text-decoration: underline;
-  color: #999;
-}
-.signup__link:focus, .signup__link:hover {
-  color: #787878;
-}
-.list-inline{
-  padding: 0 !important;
-}
-.login__div{
-  width: 100%;
-  text-align: right;
-  padding-top: 3%;
 } */
 
 
@@ -596,11 +496,12 @@ img {
 	display: block;
 	width: 100%;
 	height: 100%;
+	border-radius: 5px;
   }
   
   .wrapper {
 	width: 100%;
-	margin: 20px auto;
+	margin: 5px auto;
   }
   
   .cards_wrap {
@@ -609,8 +510,8 @@ img {
   }
   
   .cards_wrap .card_item {
-	width: 25%;
-	padding: 10px;
+	width: 20%;
+	padding: 2px;
   }
   
   .cards_wrap .card_inner {
@@ -625,7 +526,7 @@ img {
   }
   
   .cards_wrap .card_bottom {
-	padding: 15px;
+	padding: 10px;
   }
   
   .cards_wrap .card_bottom .card_category {
@@ -636,11 +537,12 @@ img {
   .cards_wrap .card_bottom .card_info {
 	padding: 15px;
 	margin: 10px 0;
-	border: 1px dashed #0071bc;
+	border: 1px solid #4d60da;
+	
   }
   
   .cards_wrap .card_bottom .card_info .title {
-	color: #0071bc;
+	color: #4d60da;
 	font-size: 18px;
 	margin-bottom: 5px;
   }
@@ -669,4 +571,32 @@ img {
 	  width: 100%;
 	}
   }
-  
+ 
+.add-car{
+	display: flex;
+	align-items: center;
+	width: 50%;
+	margin-top: 10%;
+
+
+}
+
+.input, add-car{
+	width: 100%;
+	align-items: center;
+	padding: 3%;
+	border-radius: 5px;
+} 
+
+.btn-form-add, button{
+	background-color: #4d60da;
+	width: 20%;
+	margin-left: 1%;
+	margin-top: 2%;
+	padding: 10px;
+	border-radius: 5%;
+}
+.btn-form-add,button:hover{
+background-color: #9a91e7;
+font-size: larger;
+}

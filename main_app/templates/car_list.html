@@ -2,12 +2,7 @@
 
 {%load static%}
 
-{% block title%}
- Cars' List
-{%endblock%}
-
 {% block content %}
-
 
     {% for car in cars%}
     <!-- <img src="{{car.image}}" alt="{{car.name}}"/> -->
@@ -24,10 +19,13 @@
         <img src="{{car.image}}" alt="{{car.name}}"/>
         <h4>{{car.name}}</h4>
         </a>
-<p class="title">About</p>
-<p>Lorem ipsum dolor sit amet c</p>
+     <p>Location:{{car_post.location}}</p>
+     <hr>
+     <p>Price:{{car_post.price}}</p>
+
 Posted by: 
 <a href ="/user/{{car_post.user.username}}">{{car.user.username}}</a>
+</div>
 </div>
 </div>
 </div>

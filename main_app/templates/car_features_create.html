@@ -1,11 +1,15 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <form action="" method="post">
+<div class="add-car-main">
+    <div class="add-car">
+    <form  class ="add-form" action="" method="post">
         {% csrf_token %}
         <table>
             {{ form.as_table }}
         </table>
-        <input type="submit" value="Submit!">
     </form>
+    <button class="btn-form-add" type="submit" value="Submit!">Save</button>
+</div>
+</div>
 {% endblock %}
