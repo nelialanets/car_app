@@ -2,21 +2,23 @@
 {%load static%}
 
 {%block content %}
-
-<h1> {{ username }}</h1>
-
+<div class="main-profile">
+<div class="profile-img-page">
+    <img  id="profile-img" src="https://www.pngfind.com/pngs/m/676-6764065_default-profile-picture-transparent-hd-png-download.png"/>
+</div>
+<h1 id="user-profile"> Postings of: {{ username }}</h1>
+</div>
 {% for car in cars%}
-
+<div class="profile-main">
 <a href="'/cars/{{car_post.id}}">
-
-    <h3>
-        {{car.name}}
-    </h3>
+    <p> {{car.name}}</p>
+<hr>
     <!-- <h3>
         <img src="{{car.image}}" alt="{{car.name}}"/>
     </h3> -->
 </a>
-
+</div>
+</div>
 
 {% endfor%}
 

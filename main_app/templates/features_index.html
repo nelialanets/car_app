@@ -5,15 +5,16 @@
 <h1>Features </h1>
 
 {% for car_feature in car_features %}
+<div class="car-features-index">
     <div>
         <a href="{% url 'car_features_show' car_feature.id %}">
             <div class="card-content">
                 <span> {{ car_feature.name}}</span>
                 <span> {{ car_feature.roof_type}}</span>
-
             </div>
         </a>
     </div>
+</div>
 {% endfor %}
 
 {% endblock %}

@@ -3,14 +3,16 @@
 {% block content %}
 <div class="main-delete">
 <h1>Are you sure you want to Delete {{car_post.name}}?</h1>
-<form method="post">
+<form  class='main-delete-form'method="post">
   {% csrf_token %}
-  <div class="confirm-msg">
    <!-- confirm cat delete -->
-    <button type="submit" value="Confirm" >Confirm</button>
     <!-- Redirect back to detail on cancel -->
-    <a href="{% url 'car_detail' car_post.pk %}">Cancel</a>
-  </div>
+    <button class="delete-btn" type="submit" value="Confirm" >Confirm</button>
 </form>
+<div class="container-delete-btn">
+<a class="confirm-msg" href="{% url 'car_detail' car_post.pk %}">Cancel</a>
 </div>
+</div>
+
+
 {% endblock %}
