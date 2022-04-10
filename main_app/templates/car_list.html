@@ -6,31 +6,28 @@
 
     {% for car in cars%}
     <!-- <img src="{{car.image}}" alt="{{car.name}}"/> -->
-<div class="wrapper">
-<div class="cards_wrap">
-    <div class="card_item">
-     <div class="card_inner">
-    <div class="card_top">
-<div class="card_bottom">
-    <div class="card_category">
-</div>
-<div class="card_info">
-    <a href="{% url 'car_detail' car.pk %}" >
-        <img id='car-list- img' src="{{car.image}}" alt="{{car.name}}"/>
-        <h4>{{car.name}}</h4>
-        </a>
-     <p>Location:{{car.location}}</p>
-     <hr>
-     <p>Price:{{car.price}}$</p>
+ 
+<div class="cards">
+    <div class="card">
+        <a href="{% url 'car_detail' car.pk %}" >
+        <img id='card_img' src="{{car.image}}" alt="{{car.name}}"/>
+        <div class="card_content">
+            <h2 id="car_name">{{car.name}}</h2>
+             </a>
+             <p class="car_name_p">Location:{{car.location}} </p>
+            <p>Price:{{car.price}}$</p>
+        </div>
+       <div class="card-info">
+        Posted by: 
+        <div> 
+           <a  class = "card_author" href ="/user/{{car_post.user.username}}">{{car.user.username}}</a>
+        </div>
+    </div> 
+   </div>
 
-Posted by: 
-<a href ="/user/{{car_post.user.username}}">{{car.user.username}}</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+
+
+
 
     {%endfor%}
 {%endblock%}
