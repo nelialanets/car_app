@@ -15,11 +15,10 @@
 </head>
 <body>
     <nav class="nav-container">
-        {% if user.is_authenticated %}
         <a href="/cars"><h1 class = "logo">LIVING</h1></a>
-        <div class="right-side">
-        <a href=" /about">About</a>
-        <a href="/cars">Car List</a>
+        <div class="sidebar">
+        <a  class="active" href="/cars">Car List</a>
+        {% if user.is_authenticated %}
         <a href="{% url 'car_create' %}">Add Car</a>
         <a href="/features">Features</a>
         <a href="{% url 'car_features_create' %}">Add Featers</a>
