@@ -1,12 +1,14 @@
 {% extends 'base.html' %}
-
+{% load crispy_forms_tags %}
 {% block content %}
-<form action ="" method="post">
+<div class="main-create"> 
+<form class='main-create-form'action ="" method="post">
     {% csrf_token%}
     <table>
-        {{form.as_table}}
+        {{form|crispy}}
      </table>
      <button type="submit" value="Submit"> Save
      </button>
      </form>
+    </div>
 {% endblock%}
