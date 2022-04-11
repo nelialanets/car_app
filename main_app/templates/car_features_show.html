@@ -1,22 +1,14 @@
 
 {% extends 'base.html' %}
 {% block content %}
-
-<h1>Cartype Details</h1>
-<!-- {{car_feature}}
-{{car_feature.roof_type}} -->
-
-
-
-<div>
-    <div>
-        <span>{{car_feature.name}}</span>
-        {{car_feature.roof_type}}
-        {{car_feature.extras}}
-        {{car_feature.transmtion_type}}
-        {{car_feature.extras}}
+<h1 class="car-feature-h1">Cartype Details</h1>
+<div class="car-features-details">
+    <div class="feature-details">
+        <h3>{{car_feature.name}}</h3>
+        <h3>{{car_feature.roof_type}}</h3>
+        <h3>{{car_feature.extras}}</h3>
+       <h3>{{car_feature.transmtion_type}}</h3>
     </div>
-    
     <div>
         <a href="{% url 'car_features_update' car_feature.id %}">Edit</a> 
         <a href="{% url 'car_features_delete' car_feature.id %}">Delete</a> 

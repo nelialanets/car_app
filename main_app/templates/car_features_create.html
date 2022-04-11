@@ -4,13 +4,13 @@
 <div class="add-features-main">
     <div class="add-features">
     <form  class ="add-form" action="" method="post">
-    <h1>Add Car Addtitional Car Features </h1>
+    <h1>Add Car Addtitional Car features </h1>
         {% csrf_token %}
         <table>
             {{ form|crispy}}
         </table>
+        <button  type="submit" value="Submit!">Save</button>
     </form>
-    <button class="btn-form-add" type="submit" value="Submit!">Save</button>
 </div>
 </div>
 {% endblock %}

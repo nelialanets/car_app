@@ -26,8 +26,8 @@ from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator
 
-# class Home(TemplateView):
-#     template_name='home.html'
+class Home(TemplateView):
+    template_name='home.html'
 
 class About(TemplateView):
     template_name='about.html'
