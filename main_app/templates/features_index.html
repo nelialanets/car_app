@@ -2,18 +2,18 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<h1>Features </h1>
-
-{% for car_feature in car_features %}
+<h1  class='car-features-index-h1'>Features </h1>
+<hr>
 <div class="car-features-index">
-    <div>
+{% for car_feature in car_features %}
+<div class="car-features-index-main">
         <a href="{% url 'car_features_show' car_feature.id %}">
             <div class="card-content">
-                <span> {{ car_feature.name}}</span>
-                <span> {{ car_feature.roof_type}}</span>
+                <h3> {{ car_feature.name}}</h3>
             </div>
         </a>
     </div>
+</div>
 </div>
 {% endfor %}
 

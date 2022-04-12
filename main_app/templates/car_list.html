@@ -1,12 +1,48 @@
-{% extends 'base.html' %}
 
-{%load static%}
 
 {% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'styles/styles.css' %}">
+    <link rel="stylesheet" href="/static/css/all.css'">
+    <script src="{% static 'scripts/app.js' %}" defer></script>
+
+    <script src="https://kit.fontawesome.com/ffd2122510.js" crossorigin="anonymous"></script>
+
+    <!-- CDN SCRIPTS CSS go here -->
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+<nav  class="nav-container">
+    <div class="left-side2">
+    <a href="/cars"><h1 class = "logo">CARzing</h1></a>
+</div>
+
+<div class="right-side2">
+    <a href="{% url 'login' %}">Login</a>
+    <a href="/about">About</a>
+</div>
+</nav>
+   
+<div class="car-image-main-page">
+<div class="container-photo">
+    <img id="hopme-pageimage"  src="https://www.montway.com/blog/app/uploads/Blog_wide_cars_drive_hawaii_1170x400.jpg" alt="car-image-main"/>
+</div>
+
+
+<h1 id="main-h1">
+    Find your drive with CARzing!
+</h1>
+<p id="main-h2">Help people exploring your home town by sharing your car!</h2>
+</div>
 
     {% for car in cars%}
     <!-- <img src="{{car.image}}" alt="{{car.name}}"/> -->
- 
 <div class="cards">
     <div class="card">
         <a href="{% url 'car_detail' car.pk %}" >
@@ -22,12 +58,11 @@
         <div> 
            <a  class = "card_author" href ="/user/{{car_post.user.username}}">{{car.user.username}}</a>
         </div>
-    </div> 
-   </div>
-
-
-
-
-
+    </div> `
+<div>
+</div>
+</div>
+</body>
     {%endfor%}
 {%endblock%}
+</html>

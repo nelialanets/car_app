@@ -9,9 +9,9 @@
         <h3>{{car_feature.extras}}</h3>
        <h3>{{car_feature.transmtion_type}}</h3>
     </div>
-    <div>
-        <a href="{% url 'car_features_update' car_feature.id %}">Edit</a> 
-        <a href="{% url 'car_features_delete' car_feature.id %}">Delete</a> 
+    <div class="show-buttons">
+        <a href="{% url 'car_features_update' car_feature.id %}"><button>Edit</button></a> 
+        <a href="{% url 'car_features_delete' car_feature.id %}"><button>Delete</button></a> 
     </div>
 </div>
 {% endblock %}

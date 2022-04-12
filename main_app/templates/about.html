@@ -1,8 +1,33 @@
-{% extends 'base.html'%}
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'styles/styles.css' %}">
+    <link rel="stylesheet" href="/static/css/all.css'">
+    <script src="{% static 'scripts/app.js' %}" defer></script>
+    <script src="https://kit.fontawesome.com/ffd2122510.js" crossorigin="anonymous"></script>
 
+    <!-- CDN SCRIPTS CSS go here -->
+<title>{% block title %}{% endblock %}</title>
+</head>
+<body>
 
-{% block content%}
+<nav  class="nav-container">
+    <div class="left-side2">
+    <a href="/cars"><h1 class = "logo">CARzing</h1></a>
+</div>
+
+<div class="right-side2">
+    <a href="{% url 'login' %}">Login</a>
+    <a href="/cars">Car List</a>
+</div>
+</nav>
 
 <h1>About</h1>
-
+</body>
 {%endblock%}
+</html>
