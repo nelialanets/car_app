@@ -16,7 +16,8 @@ import os
 import socket
 import psycopg2
 import dj_database_url
- 
+# load_dotenv()
+
 
 # If the host name starts with 'live', DJANGO_HOST = "production"
 if socket.gethostname().startswith('live'):
@@ -103,7 +104,7 @@ WSGI_APPLICATION = 'carapp.wsgi.application'
 
 DATABASE_URL = os.environ['DATABASE_URL']
 conn = psycopg2.connect(DATABASE_URL, sslmode='require')
-
+#+====================================================>
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
