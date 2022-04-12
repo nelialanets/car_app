@@ -37,12 +37,14 @@ App
 
 Log in page:
 <img width="1200" alt="Screen Shot 2022-04-12 at 4 04 02 PM" src="https://user-images.githubusercontent.com/78198715/163069418-83fbe40a-42eb-41a1-8996-6fd78f8e36a5.png">
+User profiele page:<img width="1030" alt="Screen Shot 2022-04-12 at 4 20 11 PM" src="https://user-images.githubusercontent.com/78198715/163070596-26d2d29c-9e24-42cb-9049-191267f5ae4c.png">
+
 
 Car Listing page -main:
 ![Screen Shot 2022-04-12 at 3 59 34 PM (2)](https://user-images.githubusercontent.com/78198715/163069463-fe84b6ef-6d8d-4eca-94d9-21117d9e5ff4.png)
-
-Car details page: 
-<img width="1201" alt="Screen Shot 2022-04-12 at 4 09 39 PM" src="https://user-images.githubusercontent.com/78198715/163069487-95283639-7fd8-4d2b-9e15-026a6ae606cd.png">
  
  Administrative view page:
 <img width="1201" alt="Screen Shot 2022-04-12 at 4 09 39 PM" src="https://user-images.githubusercontent.com/78198715/163070134-64b62042-0a1a-4281-93e6-09de0b331e8e.png">
+
+Car features: <img width="1450" alt="Screen Shot 2022-04-12 at 4 25 16 PM" src="https://user-images.githubusercontent.com/78198715/163070835-dbdf912c-5420-4c8b-bf1a-2733089c37bf.png">
+
