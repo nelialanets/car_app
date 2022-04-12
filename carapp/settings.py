@@ -12,15 +12,12 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 from pathlib import Path
 # from dotenv import load_dotenv
-# load_dotenv()
-import os
 import os
 import socket
 import psycopg2
 import dj_database_url
+ 
 
-DATABASE_URL = os.environ['DATABASE_URL']
-conn = psycopg2.connect(DATABASE_URL, sslmode='require')
 # If the host name starts with 'live', DJANGO_HOST = "production"
 if socket.gethostname().startswith('live'):
     DJANGO_HOST = "production"
@@ -101,7 +98,11 @@ WSGI_APPLICATION = 'carapp.wsgi.application'
 
 
 # Database
-# https://docs.djangoproject.com/en/4.0/ref/settings/#databases
+
+# https://docs.djangoproject.com/en/4.0/ref/settings/ 
+
+DATABASE_URL = os.environ['DATABASE_URL']
+conn = psycopg2.connect(DATABASE_URL, sslmode='require')
 
 DATABASES = {
     'default': {
@@ -109,7 +110,9 @@ DATABASES = {
         'NAME': 'carr',
     }
 }
-# DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True) #comment it our once on local comp and vs once pushing 
+DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
+
+ #comment it our once on local comp and vs once pushing 
 #===================================>>>>>>>>>>
 
 # Password validation
@@ -146,7 +149,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-# STATIC_URL = '/static/'
+STATIC_URL = '/static/'
 PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
 STATIC_ROOT = os.path.join(PROJECT_DIR, 'static')
 
