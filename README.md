@@ -3,23 +3,33 @@
 <strong> CARZING </strong>
 
 The CARzing is a simple app designed for people who would like to post thir personal whiicles  for rent. The main page reflects the variety of available cars posted by many users of the app who would like to rent a car. 
-<br>
+
+
+    
+    
+<hr>  
+Table of Contest 
+
+
+Get Started | User Story | User Flow | Wireframe | Data ERD | Technologies Used | Unsolved Problems | Future Enhancements
+<hr>
+
+<strong> Get Started </strong>
+
+<hr>
+
+The live version of this app can be viewed here.
+
+https://car-app-living.herokuapp.com/cars/
+
+
+USER STORY 
+
 User will be able to sign in on his/her/their admin page to create a post of their vehicle that they want to rent out.
 User of the app will be able to create, update, edit, and update their posts.  
 Browse the website to see other posts of the vehicles and see the details and search vehicles by name or location.
 User will not be able to edit, update, delete posts of others
 User will be able to track its own post history
-    
-    
-<hr>  
-Table of Contest 
-<hr>
-
-<strong> Get Started </strong>
-
-The live version of this app can be viewed here.
-
-https://car-app-living.herokuapp.com/cars/
 
     Technologies Used
 2. ERD
