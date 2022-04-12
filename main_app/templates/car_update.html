@@ -7,7 +7,7 @@
   <h1 class="h1-update"> Update {{car_post.name}} </h1> <!--use action nand post methods for update CRUD-->
   {% csrf_token %}
   {{form|crispy}}
-  <button type='submit' value='Submit'>Submitt</button>
+  <button class= "btn-form-add"  type='submit' value='Submit'>Submitt</button>
 </form>
 </div>
 {% endblock %}

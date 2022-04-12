@@ -16,12 +16,16 @@
 </head>
 <body>
     <nav class="nav-container">
-        <div Cclass="logo-class">
+        <div class="logo-class">
+            <img  class='logo-img' src="/static/images/gold.jpg "/>
         <a href="/cars"><h1 class = "logo">CARzing</h1></a>
-        <img  class='logo-img' src="/static/images/gold.jpg "/>
+        <!-- <a  class="active" href="/cars">Car List</a> -->
+        <div class="right-side">
+            <a href="{% url 'login' %}">Login</a>
+        </div>
     </div>
         <div class="sidebar">
-        <a  class="active" href="/cars">Car List</a>
+            <a  class="active" href="/cars">Car List</a>
         {% if user.is_authenticated %}
         <a href="{% url 'car_create' %}">Add Car</a>
         <a href="/features">Features</a>
@@ -34,7 +38,7 @@
          </div>
     <div class="left-side">
         {% else %}
-       <a href="{% url 'login' %}">Login</a>
+       <!-- <a href="{% url 'login' %}">Login</a> -->
         <!-- <a href="{% url 'signup' %}">SignUp</a>  -->
         {% endif %}
     </nav>

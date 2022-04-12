@@ -19,8 +19,8 @@ import socket
 import psycopg2
 import dj_database_url
 
-# DATABASE_URL = os.environ['DATABASE_URL']#===================================>>>>>>>>>>
-# conn = psycopg2.connect(DATABASE_URL, sslmode='require')#===================================>>>>>>>>>>
+DATABASE_URL = os.environ['DATABASE_URL']
+conn = psycopg2.connect(DATABASE_URL, sslmode='require')
 # If the host name starts with 'live', DJANGO_HOST = "production"
 if socket.gethostname().startswith('live'):
     DJANGO_HOST = "production"
@@ -50,9 +50,9 @@ SECRET_KEY = str(os.getenv('SECRET_KEY')) # calling the SECRET_KEY
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = True
 
-# ALLOWED_HOSTS = [
-#     'car-app-living.herokuapp.com'
-# ]
+ALLOWED_HOSTS = [
+    'car-app-living.herokuapp.com'
+]
 
 
 # Application definition
@@ -109,7 +109,7 @@ DATABASES = {
         'NAME': 'carr',
     }
 }
-# DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True) #comment it our once on local comp and vs once pushing 
+DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True) #comment it our once on local comp and vs once pushing 
 #===================================>>>>>>>>>>
 
 # Password validation
