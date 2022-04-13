@@ -11,7 +11,7 @@ The CARzing is a simple app designed for people who would like to post thir pers
 Table of Contest 
 
 
-[Get Started](https://github.com/nelialanets/car_app/#get-started) | User Story | User Flow | Data ERD| Wireframe  | Technologies Used | Unsolved Problems | Future Enhancements
+[Get Started](https://github.com/nelialanets/car_app/#get-started) | [User Story ](https://github.com/nelialanets/car_app/#user-story)| [Data ERD](https://github.com/nelialanets/car_app/#data-erd)| [Wireframe](https://github.com/nelialanets/car_app/#wireframe| | [Technologies Used ] (https://github.com/nelialanets/car_app/#technologies-used)|| [Unsolved Problems](https://github.com/nelialanets/car_app/#unsolved-problems)| [Future Enhancements](https://github.com/nelialanets/car_app/#future-enhancements)
 <hr>
 
 
@@ -74,7 +74,7 @@ Unsolved Problems:
 Future Enhancements:
 Functionality that references car features to carp post 
 Functionality for uplod for the user, and profile emage
-Funcrionality for calendar
+Functionality for calendar
 
 
 
