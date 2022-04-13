@@ -11,7 +11,7 @@ The CARzing is a simple app designed for people who would like to post thir pers
 Table of Contest 
 
 
-<a name='get started'>Get Started</a> | User Story | User Flow | Data ERD| Wireframe  | Technologies Used | Unsolved Problems | Future Enhancements
+Get Started(#get strarted)| User Story | User Flow | Data ERD| Wireframe  | Technologies Used | Unsolved Problems | Future Enhancements
 <hr>
 Wireframe 
 <strong> Get Started </strong>
