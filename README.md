@@ -11,9 +11,10 @@ The CARzing is a simple app designed for people who would like to post thir pers
 Table of Contest 
 
 
-Get Started(#get strarted)| User Story | User Flow | Data ERD| Wireframe  | Technologies Used | Unsolved Problems | Future Enhancements
+Get Started(#18-get-started)| User Story | User Flow | Data ERD| Wireframe  | Technologies Used | Unsolved Problems | Future Enhancements
 <hr>
-Wireframe 
+
+
 <strong> Get Started </strong>
 
 The live version of this app can be viewed here.
@@ -34,7 +35,7 @@ USER STORY
   
         *AAU, I want to be be able to track its own post history
 
-2.
+
 
 ERD |![Untitled Diagram drawio (3)](https://user-images.githubusercontent.com/78198715/161196607-325a4dd0-a577-4558-8bac-ff578804af5b.png)
 
