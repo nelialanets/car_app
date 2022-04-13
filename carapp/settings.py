@@ -11,12 +11,13 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
 from pathlib import Path
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 import os
 import socket
 import psycopg2
 import dj_database_url
-load_dotenv()
+
+# load_dotenv()
 
 
 # If the host name starts with 'live', DJANGO_HOST = "production"
