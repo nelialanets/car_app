@@ -23,7 +23,7 @@ https://car-app-living.herokuapp.com/cars/
 
 USER STORY 
 
-         *As a user (AAU), I want to sign up for an account
+        *As a user (AAU), I want to sign up for an account
         *AAU, I want to be able to log unto anadmin page to create a post of a vehicle I want to rent out.
  
         *AAU, of the app I want to be able to create, update, edit, and update the post posts.  
