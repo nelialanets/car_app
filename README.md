@@ -23,7 +23,7 @@ https://car-app-living.herokuapp.com/cars/
 
 USER STORY 
 
-   *As a user (AAU), I want to sign up for an account
+         *As a user (AAU), I want to sign up for an account
         *AAU, I want to be able to log unto anadmin page to create a post of a vehicle I want to rent out.
  
         *AAU, of the app I want to be able to create, update, edit, and update the post posts.  
@@ -33,14 +33,6 @@ USER STORY
          * AAU, I will not be able to edit, update, delete posts of others.
   
         *AAU, I want to be be able to track its own post history
-
-    Technologies Used
-2. ERD
-3.Wireframes
-4. Screenshots
-5. Future Enhancements
-6. Authors
-
 
 2.
 
@@ -68,4 +60,20 @@ Car Listing page -main:
 <img width="1201" alt="Screen Shot 2022-04-12 at 4 09 39 PM" src="https://user-images.githubusercontent.com/78198715/163070134-64b62042-0a1a-4281-93e6-09de0b331e8e.png">
 
 Car features: <img width="1450" alt="Screen Shot 2022-04-12 at 4 25 16 PM" src="https://user-images.githubusercontent.com/78198715/163070835-dbdf912c-5420-4c8b-bf1a-2733089c37bf.png">
+
+
+Technologies Used:
+Python
+Django
+PostgreSQL
+<hr>
+Unsolved Problems:
+<hr>
+
+Future Enhancements:
+Functionality that references car features to carp post 
+Functionality for uplod for the user, and profile emage
+Funcrionality for calendar
+
+
 
