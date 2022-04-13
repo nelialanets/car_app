@@ -8,7 +8,7 @@ The CARzing is a simple app designed for people who would like to post thir pers
     
     
 
-Table of Contest 
+##Table of Contest 
 
 
 [Get Started](https://github.com/nelialanets/car_app/#get-started)
@@ -27,14 +27,14 @@ Table of Contest
 <hr>
 
 
-<strong> Get Started </strong>
+ ##Get Started 
 
 The live version of this app can be viewed here.
 
 https://car-app-living.herokuapp.com/cars/
 
 
-USER STORY 
+##USER STORY 
 
         *As a user (AAU), I want to sign up for an account
         *AAU, I want to be able to log unto anadmin page to create a post of a vehicle I want to rent out.
@@ -49,12 +49,12 @@ USER STORY
 
 
 
-ERD |![Untitled Diagram drawio (3)](https://user-images.githubusercontent.com/78198715/161196607-325a4dd0-a577-4558-8bac-ff578804af5b.png)
+###ERD |![Untitled Diagram drawio (3)](https://user-images.githubusercontent.com/78198715/161196607-325a4dd0-a577-4558-8bac-ff578804af5b.png)
 
 
 
 
-Wireframes|
+###Wireframes|
 
 ![My First Board (1)](https://user-images.githubusercontent.com/78198715/161007698-c33c2d76-8c0e-41a4-b10a-73a0588e2421.jpg)
 
@@ -75,7 +75,7 @@ Car Listing page -main:
 Car features: <img width="1450" alt="Screen Shot 2022-04-12 at 4 25 16 PM" src="https://user-images.githubusercontent.com/78198715/163070835-dbdf912c-5420-4c8b-bf1a-2733089c37bf.png">
 
 
-Technologies Used:
+###Technologies Used:
 <br>
 Python
 <br>
@@ -83,10 +83,10 @@ Django
 <br>
 PostgreSQL
 <hr>
-Unsolved Problems:
+###Unsolved Problems:
 <hr>
 
-Future Enhancements:
+###Future Enhancements:
 <br>
 Functionality that references car features to carp post 
 <br>
