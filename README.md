@@ -11,7 +11,7 @@ The CARzing is a simple app designed for people who would like to post thir pers
 Table of Contest 
 
 
-[Get Started](https://github.com/nelialanets/car_app/#get-started) | [User Story ](https://github.com/nelialanets/car_app/#user-story)| [Data ERD](https://github.com/nelialanets/car_app/#data-erd)| [Wireframe](https://github.com/nelialanets/car_app/#wireframe| | [Technologies Used ] (https://github.com/nelialanets/car_app/#technologies-used)|| [Unsolved Problems](https://github.com/nelialanets/car_app/#unsolved-problems)| [Future Enhancements](https://github.com/nelialanets/car_app/#future-enhancements)
+[Get Started](https://github.com/nelialanets/car_app/#get-started) | [User Story ](https://github.com/nelialanets/car_app/#user-story)| [Data ERD](https://github.com/nelialanets/car_app/#data-erd)| [Wireframe](https://github.com/nelialanets/car_app/#Wireframe| | [Technologies Used] (https://github.com/nelialanets/car_app/#technologies-used)|| [Unsolved Problems](https://github.com/nelialanets/car_app/#unsolved-problems)| [Future Enhancements](https://github.com/nelialanets/car_app/#future-enhancements)
 <hr>
 
 
@@ -64,8 +64,11 @@ Car features: <img width="1450" alt="Screen Shot 2022-04-12 at 4 25 16 PM" src="
 
 
 Technologies Used:
+<br>
 Python
+<br>
 Django
+<br>
 PostgreSQL
 <hr>
 Unsolved Problems:
