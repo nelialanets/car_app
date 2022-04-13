@@ -1,6 +1,6 @@
 # car_app
 
-<strong> CARZING </strong>
+<strong> CARZing </strong>
 
 The CARzing is a simple app designed for people who would like to post thir personal whiicles  for rent. The main page reflects the variety of available cars posted by many users of the app who would like to rent a car. 
 
