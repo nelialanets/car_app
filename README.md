@@ -11,7 +11,7 @@ The CARzing is a simple app designed for people who would like to post thir pers
 Table of Contest 
 
 
-[Get Started](https://github.com/PredatorR10/Rendevous/#get-started) | User Story | User Flow | Data ERD| Wireframe  | Technologies Used | Unsolved Problems | Future Enhancements
+[Get Started](https://github.com/nelialanets/car_app/#get-started) | User Story | User Flow | Data ERD| Wireframe  | Technologies Used | Unsolved Problems | Future Enhancements
 <hr>
 
 
