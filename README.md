@@ -29,7 +29,7 @@ The CARzing is a simple app designed for people who would like to post thir pers
 
  ## Get Started 
 
-The live version of this app can be viewed here.
+The live version of this app can be viewed here:
 
 https://car-app-living.herokuapp.com/cars/
 
