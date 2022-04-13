@@ -1,12 +1,13 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <h1>Delete Feature</h1>
+    <h1 class='features-delete'>Delete Feature</h1>
+<div class="features-delete">
+    <h4>Are you sure you want to delete <strong>{{car_feature.name}}</strong>?</h4>
 
-    <h4>Are you sure you want to delete <strong>{{car_feature}}</strong>?</h4>
-
-    <form action="" method="POST">
+    <form class='ft-delete-form' action="" method="POST">
         {% csrf_token %}
-        <input type="submit" value="Yes - Delete!">
+        <input  class ="ft-delete-btn" type="submit" value="Yes - Delete!">
     </form>
+</div>
 {% endblock %}

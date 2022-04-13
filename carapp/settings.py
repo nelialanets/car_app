@@ -48,9 +48,9 @@ SECRET_KEY = str(os.getenv('SECRET_KEY')) # calling the SECRET_KEY
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = True
 
-ALLOWED_HOSTS = [
-    'car-app-living.herokuapp.com'
-]
+# ALLOWED_HOSTS = [
+#     'car-app-living.herokuapp.com'
+# ]
 
 
 # Application definition
@@ -102,8 +102,8 @@ WSGI_APPLICATION = 'carapp.wsgi.application'
 
 # https://docs.djangoproject.com/en/4.0/ref/settings/ 
 
-DATABASE_URL = os.environ['DATABASE_URL']
-conn = psycopg2.connect(DATABASE_URL, sslmode='require')
+# DATABASE_URL = os.environ['DATABASE_URL']
+# conn = psycopg2.connect(DATABASE_URL, sslmode='require')
 #+====================================================>
 DATABASES = {
     'default': {
@@ -111,7 +111,7 @@ DATABASES = {
         'NAME': 'carr',
     }
 }
-DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
+# DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
 
  #comment it our once on local comp and vs once pushing 
 #===================================>>>>>>>>>>
